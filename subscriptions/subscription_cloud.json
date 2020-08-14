@@ -1,0 +1,16 @@
+{
+  "description": "A subscription for NumberOfVisitorsByAge",
+  "subject": {
+    "entities": [
+      {
+        "idPattern": ".*",
+        "type": "NumberOfVisitorsByAge"
+      }
+    ]
+  },
+  "notification": {
+    "http": {
+      "url": "http://192.168.28.56:1026/v2/op/notify"
+    }
+  }
+}

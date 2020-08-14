@@ -1,0 +1,9 @@
+nfs:
+  #  See https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+  server: 192.168.28.20
+  path: /var/nfs/kubedata
+
+storageClass:
+  name: openwhisk-nfs
+  reclaimPolicy: Delete
+  defaultClass: true

@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: mc-test
+  labels:
+    app: mc-test
+spec:
+  serviceName: mc-test
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mc-test
+  template:
+    metadata:
+      labels:
+        app: mc-test
+    spec:
+      containers:
+      - image: minio/mc
+        imagePullPolicy: Always
+        name: mc
+        command: ["/bin/sh"]
+        stdin: true
+        tty: true

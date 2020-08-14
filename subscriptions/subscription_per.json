@@ -1,0 +1,21 @@
+{
+    "description": "A subscription for Orion Connector for Field Analyst Data.",
+    "subject": {
+        "entities": [
+	    {
+		"idPattern": ".*",
+		"type": "Person"
+	    }
+        ],
+	"condition": {
+	    "expression": {
+		"q": "age>0"
+	    }
+	}
+    },
+    "notification": {
+        "http": {
+            "url": "http://quantumleap:8668/v2/notify"
+        }
+    }
+}
