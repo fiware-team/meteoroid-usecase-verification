@@ -1,10 +1,10 @@
 {
-  "description": "A subscription for NumberOfVisitorsByAge",
+  "description": "DailyVisitorsByAge to Orion on Cloud",
   "subject": {
     "entities": [
       {
         "idPattern": ".*",
-        "type": "NumberOfVisitorsByAge"
+        "type": "DailyVisitorsByAge"
       }
     ]
   },

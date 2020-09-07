@@ -1,10 +1,10 @@
 {
-    "description": "TCPNotification to Quantum Leap",
+    "description": "DailyVisitorsByAge to Quantum Leap",
     "subject": {
         "entities": [
-            {
-		"idPattern": ".*",
-                "type": "TCPNotification"
+	    {
+                "idPattern": ".*",
+	        "type": "DailyVisitorsByAge"
 	    }
         ]
     },
@@ -14,5 +14,6 @@
         },
         "attrs": [
         ]
-    }
+    },
+    "throttling": 1
 }
