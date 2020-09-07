@@ -1,0 +1,12 @@
+{
+    "id": "ad05",
+    "type": "ImageObject",
+    "caption": {
+        "type": "Text",
+        "value": "Image for 50s"
+    },
+    "contentUrl": {
+        "type": "Text",
+        "value": "http://192.168.28.10:30007/images/ad05.png"
+    }
+}
