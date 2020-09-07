@@ -31,5 +31,5 @@ python main.py
 サイネージアプリケーションのAPIによって表示する画像を変更することができる。
 
 ```bash
-curl -X POST http://<サイネージアプリケーションのIP>:5000/image -d '{"url": "https://static.wixstatic.com/media/83bf7d_52bcd43f86134be0a80490cb85e5b8ff~mv2.png"}'
+curl -X POST http://<サイネージアプリケーションのIP>:5000/image -H 'Content-Type: application/json' -d '{"url": "https://static.wixstatic.com/media/83bf7d_52bcd43f86134be0a80490cb85e5b8ff~mv2.png"}'
 ```
