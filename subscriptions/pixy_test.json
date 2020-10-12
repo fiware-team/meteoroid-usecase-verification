@@ -1,0 +1,16 @@
+{
+    "description": "Test for Pixy-Kafka",
+    "subject": {
+        "entities": [
+	    {
+		"idPattern": ".*",
+		"type": "Test"
+	    }
+        ]
+    },
+    "notification": {
+        "http": {
+            "url": "http://pixy:80/topics/subscription/messages"
+        }
+    }
+}
